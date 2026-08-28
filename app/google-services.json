@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964370222388",
+    "project_id": "comebackhome-edf8d",
+    "storage_bucket": "comebackhome-edf8d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964370222388:android:c545f309651f555430e961",
+        "android_client_info": {
+          "package_name": "com.example.myhome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnN1BSkh04EB71e0PGEhUSWvmlqxaZVUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

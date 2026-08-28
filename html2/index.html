@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>산곡 자동차운전전문학원 | 부평·산곡 1:1 맞춤 교육</title>
+  
+  <!-- Font & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#16a34a',
+              600: '#15803d',
+              700: '#166534',
+              primary: '#0F766E',
+              primaryLight: '#14B8A6',
+              dark: '#0f172a',
+              accent: '#F59E0B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #042f2e 0%, #0f172a 60%, #134e4a 100%);
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(20, 184, 166, 0.4);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased pb-24 md:pb-0 selection:bg-teal-500 selection:text-white">
+
+  <!-- 상단 헤더 / 네비게이션 -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <!-- 로고 -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-600 to-emerald-500 flex items-center justify-center text-white shadow-md">
+          <i class="fa-solid fa-car-side text-lg"></i>
+        </div>
+        <div>
+          <span class="font-extrabold text-lg text-slate-900 tracking-tight block leading-tight">산곡 운전면허학원</span>
+          <span class="text-[10px] text-teal-600 font-semibold tracking-wider uppercase">Sangok Driving Academy</span>
+        </div>
+      </a>
+
+      <!-- 데스크톱 메뉴 -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-teal-600 transition-colors">학원특장점</a>
+        <a href="#courses" class="hover:text-teal-600 transition-colors">면허/교육과정</a>
+        <a href="#calculator" class="hover:text-teal-600 transition-colors">수강료 견적</a>
+        <a href="#shuttle" class="hover:text-teal-600 transition-colors">셔틀버스 노선</a>
+        <a href="#review" class="hover:text-teal-600 transition-colors">합격후기</a>
+        <a href="#location" class="hover:text-teal-600 transition-colors">오시는 길</a>
+      </nav>
+
+      <!-- 헤더 우측 전화/상담 버튼 -->
+      <div class="flex items-center gap-2">
+        <a href="tel:032-500-0000" class="hidden sm:inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold px-3.5 py-2 rounded-lg transition-colors border border-slate-300">
+          <i class="fa-solid fa-phone text-teal-600"></i>
+          <span>032-500-0000</span>
+        </a>
+        <a href="#consultation" class="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold px-4 py-2 rounded-lg shadow-sm transition-all transform active:scale-95">
+          빠른 상담신청
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 히어로 섹션 -->
+  <section class="relative pt-24 pb-16 md:pt-36 md:pb-24 hero-gradient text-white overflow-hidden">
+    <!-- 배경 장식 효과 -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(20,184,166,0.2),transparent_50%)]"></div>
+    <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <!-- 텍스트 영역 -->
+        <div class="md:col-span-7 text-center md:text-left space-y-5">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/20 border border-teal-400/30 text-teal-300 text-xs font-semibold badge-glow">
+            <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+            인천 부평·산곡 공식 경찰청 지정 전문학원
+          </div>
+          
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight md:leading-snug">
+            자체 시험으로 빠르게!<br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-300 to-yellow-300">
+              친절하고 쉬운 면허 취득
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mx-auto md:mx-0">
+            학원에서 연습하고 매일 자체 시험 실시! 1:1 맞춤형 밀착 강습으로 장롱면허 걱정 없는 베테랑 운전자로 완성해 드립니다. 부평 전 지역 무료 셔틀 운행 중.
+          </p>
+
+          <!-- 핵심 특장점 뱃지 그리드 -->
+          <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-2 pb-2 max-w-lg mx-auto md:mx-0">
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/10 text-center">
+              <div class="text-teal-300 font-black text-lg sm:text-xl">매일 시험</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">학원 자체시험</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/10 text-center">
+              <div class="text-teal-300 font-black text-lg sm:text-xl">96.8%</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">높은 1차 합격률</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/10 text-center">
+              <div class="text-teal-300 font-black text-lg sm:text-xl">전지역</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">무료 셔틀 운행</div>
+            </div>
+          </div>
+
+          <!-- CTA 버튼군 -->
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2">
+            <a href="#consultation" class="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 font-bold text-sm text-white rounded-xl shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2 transition-all transform active:scale-95">
+              <i class="fa-solid fa-calendar-check"></i>
+              실시간 수강 및 교육 예약
+            </a>
+            <a href="tel:032-500-0000" class="w-full sm:w-auto px-6 py-3.5 bg-white/10 hover:bg-white/20 border border-white/20 font-semibold text-sm text-white rounded-xl flex items-center justify-center gap-2 transition-all">
+              <i class="fa-solid fa-headset text-teal-400"></i>
+              전화로 1분 빠른 상담
+            </a>
+          </div>
+        </div>
+
+        <!-- 퀵 상담 카드 (히어로 우측) -->
+        <div class="md:col-span-5">
+          <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-7 shadow-2xl border border-slate-100 relative">
+            <div class="absolute -top-3 right-6 bg-amber-500 text-white font-extrabold text-[11px] px-3 py-1 rounded-full shadow-md">
+              선착순 수강료 할인 이벤트!
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              <i class="fa-solid fa-bolt text-teal-600"></i>
+              간편 빠른 수강 문의
+            </h3>
+            <p class="text-xs text-slate-500 mt-1">문의를 남겨주시면 5분 이내 전담 강사가 안내해 드립니다.</p>
+
+            <form onsubmit="handleQuickSubmit(event)" class="mt-4 space-y-3">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">성함</label>
+                <input type="text" id="heroName" required placeholder="홍길동" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent bg-slate-50">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">연락처</label>
+                <input type="tel" id="heroPhone" required placeholder="010-1234-5678" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent bg-slate-50">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">희망 과정</label>
+                <select id="heroCourse" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-slate-50">
+                  <option value="2종 보통 (자동)">2종 보통 자동 (가장 인기)</option>
+                  <option value="1종 보통 (수동)">1종 보통 (수동/트럭)</option>
+                  <option value="1종 대형 면허">1종 대형 면허</option>
+                  <option value="초보/장롱면허 도로연수">초보/장롱면허 시내 도로연수</option>
+                  <option value="2종 소형 (오토바이)">2종 소형 (오토바이)</option>
+                </select>
+              </div>
+              <div class="flex items-center gap-2 pt-1">
+                <input type="checkbox" id="heroAgree" required checked class="w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500">
+                <label for="heroAgree" class="text-xs text-slate-500">개인정보 수집 및 상담 연락에 동의합니다.</label>
+              </div>
+              <button type="submit" class="w-full py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold text-sm rounded-xl shadow-md transition-all active:scale-98 mt-2">
+                무료 상담 & 시간표 조회 신청
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 주요 혜택 및 특장점 섹션 -->
+  <section id="about" class="py-16 bg-white border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-teal-600 font-bold text-xs uppercase tracking-wider bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Why Sangok?</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">왜 산곡 운전면허학원인가요?</h2>
+        <p class="text-slate-500 text-sm mt-2">부평구 산곡동 및 인근 주민분들이 가장 신뢰하고 추천하는 이유</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 특장점 1 -->
+        <div class="bg-slate-50 border border-slate-200/70 rounded-2xl p-6 hover:shadow-lg transition-all group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-square-check"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800">학원 자체 기능·도로 시험</h3>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+            별도 면허시험장에 갈 필요 없이, 내가 직접 연습하던 친숙한 코스 차량으로 학원에서 매일 시험을 치릅니다.
+          </p>
+        </div>
+
+        <!-- 특장점 2 -->
+        <div class="bg-slate-50 border border-slate-200/70 rounded-2xl p-6 hover:shadow-lg transition-all group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800">합격률 높은 쉬운 도로코스</h3>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+            복잡하지 않고 직진 위주의 쾌적한 도로주행 A/B/C/D 코스로 초보자도 안심하고 높은 합격률을 보장합니다.
+          </p>
+        </div>
+
+        <!-- 특장점 3 -->
+        <div class="bg-slate-50 border border-slate-200/70 rounded-2xl p-6 hover:shadow-lg transition-all group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl mb-4 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-van-shuttle"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800">부평 전역 무료 셔틀</h3>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+            산곡역, 부평역, 백운역, 부개, 청천, 삼산동 등 주요 거점과 아파트 단지 앞까지 편안하게 모십니다.
+          </p>
+        </div>
+
+        <!-- 특장점 4 -->
+        <div class="bg-slate-50 border border-slate-200/70 rounded-2xl p-6 hover:shadow-lg transition-all group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800">1:1 베테랑 친절 강사진</h3>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
+            강압적이거나 불친절한 교육은 No! 눈높이에 맞춘 칭찬 중심의 전문 강사 배정 및 강사 평가제를 운영합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 면허 및 교육과정 섹션 (탭 인터랙션) -->
+  <section id="courses" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-teal-600 font-bold text-xs uppercase tracking-wider bg-teal-100/60 px-3 py-1 rounded-full">Curriculum</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">면허 취득 & 연수 교육과정</h2>
+        <p class="text-slate-500 text-sm mt-2">원하시는 교육 과정을 선택하여 상세 내용을 확인해보세요.</p>
+      </div>
+
+      <!-- 과정 탭 버튼 -->
+      <div class="flex items-center justify-center gap-2 overflow-x-auto no-scrollbar pb-3">
+        <button onclick="switchTab('tab-2auto')" id="btn-2auto" class="course-tab-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-teal-600 text-white shadow-md">
+          <i class="fa-solid fa-car mr-1.5"></i>2종 보통(자동)
+        </button>
+        <button onclick="switchTab('tab-1manual')" id="btn-1manual" class="course-tab-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
+          <i class="fa-solid fa-truck mr-1.5"></i>1종 보통(수동)
+        </button>
+        <button onclick="switchTab('tab-training')" id="btn-training" class="course-tab-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
+          <i class="fa-solid fa-road mr-1.5"></i>초보 시내 도로연수
+        </button>
+        <button onclick="switchTab('tab-heavy')" id="btn-heavy" class="course-tab-btn px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
+          <i class="fa-solid fa-bus mr-1.5"></i>1종 대형 / 2종 소형
+        </button>
+      </div>
+
+      <!-- 탭 컨텐츠 1: 2종 보통 -->
+      <div id="tab-2auto" class="course-content-panel mt-6 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+        <div class="grid md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 text-xs font-bold text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md">
+              가장 많은 수강생이 선택하는 대중적인 면허
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">2종 보통 자동 (승용차 자동변속기)</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              승용차 및 10인승 이하 승합차를 운전할 수 있는 면허입니다. 신형 소형 승용차(아반떼/K3 등)로 교육을 진행하며 최신 채점 시스템이 탑재되어 있습니다.
+            </p>
+            
+            <div class="space-y-2 pt-2 text-xs sm:text-sm">
+              <div class="flex items-center gap-2 text-slate-700">
+                <i class="fa-solid fa-circle-check text-teal-600"></i>
+                <span><strong>학과 교육:</strong> 3시간 (교통법규 및 안전교육)</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-700">
+                <i class="fa-solid fa-circle-check text-teal-600"></i>
+                <span><strong>장내 기능 교육:</strong> 4시간 (기초 조작, 경사로, 직각주차 T자 코스)</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-700">
+                <i class="fa-solid fa-circle-check text-teal-600"></i>
+                <span><strong>도로 주행 교육:</strong> 6시간 (산곡/부평 최적화 주행 코스 4개)</span>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <a href="#calculator" class="inline-flex items-center gap-2 text-xs font-bold text-teal-600 hover:text-teal-700 underline">
+                예상 수강료 계산해보기 <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-gradient-to-br from-slate-900 to-teal-950 text-white rounded-xl p-5 sm:p-6 space-y-4">
+            <h4 class="font-bold text-teal-300 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-stopwatch"></i> 단기 속성 취득 스케줄
+            </h4>
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between items-center border-b border-white/10 pb-2">
+                <span class="text-slate-300">1일차</span>
+                <span class="font-semibold text-white">학과 3시간 + 학과시험(필기)</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-white/10 pb-2">
+                <span class="text-slate-300">2일차</span>
+                <span class="font-semibold text-white">장내 기능 4시간 + 기능시험</span>
+              </div>
+              <div class="flex justify-between items-center border-b border-white/10 pb-2">
+                <span class="text-slate-300">3~4일차</span>
+                <span class="font-semibold text-white">도로주행 6시간 + 도로시험</span>
+              </div>
+              <div class="flex justify-between items-center pt-1 font-bold text-teal-300">
+                <span>최단 완성</span>
+                <span class="text-sm">약 3~4일 완성 가능!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 탭 컨텐츠 2: 1종 보통 -->
+      <div id="tab-1manual" class="course-content-panel mt-6 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm hidden">
+        <div class="grid md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">
+              취업, 공무원 가산점 및 화물/승합차 운전 필수
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">1종 보통 (1톤 트럭 수동변속기)</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              15인승 이하 승합차, 12인승 이하 승용차, 12톤 미만 화물차를 운전할 수 있습니다. 클러치 조작 및 시동 꺼짐 방지 노하우를 전문 강사가 1:1로 차근차근 전수합니다.
+            </p>
+            
+            <div class="space-y-2 pt-2 text-xs sm:text-sm">
+              <div class="flex items-center gap-2 text-slate-700">
+                <i class="fa-solid fa-circle-check text-blue-600"></i>
+                <span><strong>학과 3h + 장내기능 4h + 도로주행 6h</strong> 의무 교육</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-700">
+                <i class="fa-solid fa-circle-check text-blue-600"></i>
+                <span>기능시험 언덕 클러치/반클러치 집중 트레이닝</span>
+              </div>
+              <div class="flex items-center gap-2 text-slate-700">
+                <i class="fa-solid fa-circle-check text-blue-600"></i>
+                <span>최신 1톤 포터Ⅱ 수동 차량으로 쾌적한 시험</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-gradient-to-br from-slate-900 to-blue-950 text-white rounded-xl p-5 sm:p-6 space-y-4">
+            <h4 class="font-bold text-blue-300 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-award"></i> 1종 보통 핵심 합격 팁
+            </h4>
+            <ul class="space-y-2 text-xs text-slate-300">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-blue-400 mt-0.5"></i>
+                <span>출발 시 반클러치 유지를 완벽 숙달하여 감점 방지</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-blue-400 mt-0.5"></i>
+                <span>T자 직각주차 공식 완벽 체화로 탈선 없는 통과</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-blue-400 mt-0.5"></i>
+                <span>도로주행 중 기어 변속 타이밍 실전 반복 교육</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 탭 컨텐츠 3: 초보 도로연수 -->
+      <div id="tab-training" class="course-content-panel mt-6 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm hidden">
+        <div class="grid md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">
+              면허증은 있지만 운전대가 두려운 분들을 위한 맞춤형 연수
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">장롱면허 탈출 & 시내 도로연수</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              학원 안전장치가 장착된 교습용 차량 또는 자차를 선택하여 출퇴근길, 마트, 주차, 고속화도로 등 수강생이 원하는 코스를 집중 교육합니다.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm pt-2">
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                <div class="font-bold text-slate-800 mb-1">기본반 (10시간)</div>
+                <div class="text-slate-500 text-xs">골목길, 차선변경, 평행/후진주차 완벽 마스터</div>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                <div class="font-bold text-slate-800 mb-1">심화반 (15~20시간)</div>
+                <div class="text-slate-500 text-xs">고속도로 주행, 야간운전, 장거리 출퇴근 코스</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-gradient-to-br from-slate-900 to-emerald-950 text-white rounded-xl p-5 sm:p-6 space-y-3">
+            <h4 class="font-bold text-emerald-300 text-sm">경찰청 등록 정식 연수기관의 장점</h4>
+            <div class="space-y-2 text-xs text-slate-300">
+              <p>✓ 불법 사설 연수와 달리 <strong>종합보험 100% 가입</strong>으로 사고 시 전액 보상</p>
+              <p>✓ 보조브레이크가 장착된 안전한 정식 교습 차량</p>
+              <p>✓ 친절하지 않을 시 강사 교체 보장제 실시</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 탭 컨텐츠 4: 대형 / 소형 -->
+      <div id="tab-heavy" class="course-content-panel mt-6 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm hidden">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-5 border border-slate-200 rounded-xl bg-slate-50/50 space-y-3">
+            <span class="text-xs font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">1종 대형 면허</span>
+            <h4 class="text-lg font-bold text-slate-900">버스 & 대형트럭 면허 취득</h4>
+            <p class="text-xs text-slate-600">
+              공무원 가산점(경찰·소방) 및 버스·특수차량 운전을 위한 과정. 넓은 대형 전용 기능장을 보유하고 있어 3~4일 단기 취득 가능.
+            </p>
+            <ul class="text-xs text-slate-600 space-y-1 pt-1">
+              <li>• 지원자격: 1종/2종 보통 취득 후 1년 이상 경과자</li>
+              <li>• 학과 3시간 + 기능 10시간 이수 후 자체시험</li>
+            </ul>
+          </div>
+
+          <div class="p-5 border border-slate-200 rounded-xl bg-slate-50/50 space-y-3">
+            <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded">2종 소형 (오토바이)</span>
+            <h4 class="text-lg font-bold text-slate-900">125cc 초과 대형 바이크</h4>
+            <p class="text-xs text-slate-600">
+              할리, 레플리카 등 125cc 이상 바이크 운행 필수 면허! 굴절, 곡선, 좁은길, 연속진로 코스 요령을 1:1 맞춤 지도합니다.
+            </p>
+            <ul class="text-xs text-slate-600 space-y-1 pt-1">
+              <li>• 학과 3시간 + 기능 10시간 이수 (원동기 소지자 면제 혜택)</li>
+              <li>• 자체 시험장에서 편안하게 합격</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 면허 취득 절차 타임라인 -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-teal-600 font-bold text-xs uppercase tracking-wider bg-teal-50 px-3 py-1 rounded-full">Step by Step</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">한눈에 보는 면허 취득 절차</h2>
+        <p class="text-slate-500 text-sm mt-2">등록부터 면허증 발급까지 산곡운전학원이 전 과정을 밀착 지원합니다.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative">
+        <!-- 스텝 1 -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative flex flex-col justify-between">
+          <div class="absolute -top-3 left-5 bg-teal-600 text-white font-black text-xs px-2.5 py-1 rounded-md shadow-xs">
+            STEP 01
+          </div>
+          <div class="pt-2">
+            <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">학원 등록 & 학과</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              입학 상담 및 일정 예약 후 학과(안전) 의무교육 3시간 수강.
+            </p>
+          </div>
+          <div class="text-[11px] text-teal-700 font-semibold mt-3 pt-2 border-t border-slate-200">
+            필기준비 모의고사 무료제공
+          </div>
+        </div>
+
+        <!-- 스텝 2 -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative flex flex-col justify-between">
+          <div class="absolute -top-3 left-5 bg-teal-600 text-white font-black text-xs px-2.5 py-1 rounded-md shadow-xs">
+            STEP 02
+          </div>
+          <div class="pt-2">
+            <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-pencil"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">학과(필기) 시험</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              운전면허시험장에서 신체검사 및 필기 PC시험 응시 (1종 70점/2종 60점 이상 합격).
+            </p>
+          </div>
+          <div class="text-[11px] text-teal-700 font-semibold mt-3 pt-2 border-t border-slate-200">
+            학원 셔틀로 시험장 동행 지원
+          </div>
+        </div>
+
+        <!-- 스텝 3 -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative flex flex-col justify-between">
+          <div class="absolute -top-3 left-5 bg-teal-600 text-white font-black text-xs px-2.5 py-1 rounded-md shadow-xs">
+            STEP 03
+          </div>
+          <div class="pt-2">
+            <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-car-tunnel"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">장내기능 & 자체시험</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              기능 4시간 이수 후 연습했던 학원 장내 코스에서 바로 자체 시험 진행 (80점 이상).
+            </p>
+          </div>
+          <div class="text-[11px] text-teal-700 font-semibold mt-3 pt-2 border-t border-slate-200">
+            연습장 = 시험장 (높은 합격률)
+          </div>
+        </div>
+
+        <!-- 스텝 4 -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative flex flex-col justify-between">
+          <div class="absolute -top-3 left-5 bg-teal-600 text-white font-black text-xs px-2.5 py-1 rounded-md shadow-xs">
+            STEP 04
+          </div>
+          <div class="pt-2">
+            <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-road-circle-check"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">도로주행 & 자체시험</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              실제 도로 6시간(4개 코스) 연습 후 검정관 동승하에 자체 도로주행 시험 진행 (70점 이상).
+            </p>
+          </div>
+          <div class="text-[11px] text-teal-700 font-semibold mt-3 pt-2 border-t border-slate-200">
+            주행 코스 해설영상 제공
+          </div>
+        </div>
+
+        <!-- 스텝 5 -->
+        <div class="bg-gradient-to-br from-teal-700 to-emerald-800 text-white rounded-2xl p-5 relative flex flex-col justify-between shadow-md">
+          <div class="absolute -top-3 left-5 bg-amber-400 text-slate-900 font-black text-xs px-2.5 py-1 rounded-md shadow-xs">
+            STEP 05
+          </div>
+          <div class="pt-2">
+            <div class="w-10 h-10 rounded-lg bg-white/20 text-teal-200 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-id-card"></i>
+            </div>
+            <h4 class="font-bold text-white text-base">면허증 최종 발급</h4>
+            <p class="text-xs text-teal-100 mt-1 leading-relaxed">
+              최종 합격 축하드립니다! 운전면허증 수령 및 이제 어엿한 정식 운전자!
+            </p>
+          </div>
+          <div class="text-[11px] text-teal-200 font-semibold mt-3 pt-2 border-t border-white/20">
+            학원 대리발급 지원
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 실시간 견적 계산기 섹션 -->
+  <section id="calculator" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(20,184,166,0.15),transparent_60%)]"></div>
+
+    <div class="max-w-4xl mx-auto px-4 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-teal-400 font-bold text-xs uppercase tracking-wider bg-teal-900/60 px-3 py-1 rounded-full border border-teal-800">Estimate</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3">스마트 수강료 간편 견적기</h2>
+        <p class="text-slate-400 text-sm mt-2">원하시는 조건과 과정을 선택하면 예상 비용을 투명하게 계산해 드립니다.</p>
+      </div>
+
+      <div class="bg-slate-800/90 border border-slate-700/80 rounded-2xl p-6 sm:p-8 backdrop-blur-md shadow-2xl">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- 옵션 선택 폼 -->
+          <div class="space-y-5">
+            <!-- 1. 종별 선택 -->
+            <div>
+              <label class="block text-xs font-semibold text-teal-300 mb-2">1. 취득 희망 종별</label>
+              <div class="grid grid-cols-2 gap-2">
+                <label class="cursor-pointer">
+                  <input type="radio" name="calcCourse" value="2auto" checked onchange="calcTotal()" class="peer sr-only">
+                  <div class="p-3 rounded-xl border border-slate-600 text-center peer-checked:border-teal-400 peer-checked:bg-teal-500/20 peer-checked:text-teal-300 transition-all text-xs font-medium">
+                    2종 보통 (자동)
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="calcCourse" value="1manual" onchange="calcTotal()" class="peer sr-only">
+                  <div class="p-3 rounded-xl border border-slate-600 text-center peer-checked:border-teal-400 peer-checked:bg-teal-500/20 peer-checked:text-teal-300 transition-all text-xs font-medium">
+                    1종 보통 (수동)
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="calcCourse" value="road10" onchange="calcTotal()" class="peer sr-only">
+                  <div class="p-3 rounded-xl border border-slate-600 text-center peer-checked:border-teal-400 peer-checked:bg-teal-500/20 peer-checked:text-teal-300 transition-all text-xs font-medium">
+                    시내 도로연수 (10시간)
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="calcCourse" value="heavy" onchange="calcTotal()" class="peer sr-only">
+                  <div class="p-3 rounded-xl border border-slate-600 text-center peer-checked:border-teal-400 peer-checked:bg-teal-500/20 peer-checked:text-teal-300 transition-all text-xs font-medium">
+                    1종 대형
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. 추가 옵션 -->
+            <div>
+              <label class="block text-xs font-semibold text-teal-300 mb-2">2. 부가 항목 및 시험료</label>
+              <div class="space-y-2 text-xs text-slate-300">
+                <label class="flex items-center justify-between p-2.5 rounded-lg bg-slate-700/50 border border-slate-700 cursor-pointer">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="calcInsurance" checked onchange="calcTotal()" class="w-4 h-4 text-teal-500 rounded border-slate-600 focus:ring-teal-400">
+                    <span>수강생 안심보험료 (필수)</span>
+                  </div>
+                  <span class="text-slate-400">15,000원</span>
+                </label>
+                <label class="flex items-center justify-between p-2.5 rounded-lg bg-slate-700/50 border border-slate-700 cursor-pointer">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="calcExamFee" checked onchange="calcTotal()" class="w-4 h-4 text-teal-500 rounded border-slate-600 focus:ring-teal-400">
+                    <span>자체 검정료 (기능+도로 주행)</span>
+                  </div>
+                  <span class="text-slate-400">95,000원</span>
+                </label>
+                <label class="flex items-center justify-between p-2.5 rounded-lg bg-slate-700/50 border border-slate-700 cursor-pointer">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" id="calcStudentDiscount" onchange="calcTotal()" class="w-4 h-4 text-teal-500 rounded border-slate-600 focus:ring-teal-400">
+                    <span class="text-amber-300 font-semibold">대학생 / 수능생 특별할인</span>
+                  </div>
+                  <span class="text-amber-400">-30,000원</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 견적 요약 결과 -->
+          <div class="bg-slate-950/70 border border-slate-700 rounded-xl p-6 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-slate-400 flex items-center justify-between border-b border-slate-800 pb-3">
+                <span>선택 과정</span>
+                <span id="summaryCourseName" class="font-bold text-teal-300 text-sm">2종 보통 자동</span>
+              </div>
+              <div class="space-y-2 py-4 text-xs text-slate-300">
+                <div class="flex justify-between">
+                  <span>기본 교육 수강료:</span>
+                  <span id="summaryTuition" class="font-mono">750,000원</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>보험 및 검정료:</span>
+                  <span id="summaryExtra" class="font-mono">110,000원</span>
+                </div>
+                <div class="flex justify-between text-amber-400">
+                  <span>이벤트 할인금액:</span>
+                  <span id="summaryDiscount" class="font-mono">0원</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-slate-700 pt-4">
+              <div class="text-xs text-slate-400 mb-1">총 예상 수강료 (VAT포함)</div>
+              <div class="flex items-baseline gap-2">
+                <span id="totalPrice" class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-emerald-400 font-mono">
+                  860,000
+                </span>
+                <span class="text-sm text-slate-300 font-bold">원</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1">* 검정료 및 조건에 따라 실제 납부액과 다소 차이가 있을 수 있습니다.</p>
+
+              <a href="#consultation" class="w-full mt-4 py-3 bg-teal-500 hover:bg-teal-600 text-slate-950 font-extrabold text-xs rounded-lg flex items-center justify-center gap-2 shadow-lg transition-all">
+                <i class="fa-solid fa-file-invoice-dollar"></i> 이 견적으로 상담 신청하기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 셔틀버스 노선 안내 섹션 -->
+  <section id="shuttle" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-teal-600 font-bold text-xs uppercase tracking-wider bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Free Shuttle</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">부평 전 지역 무료 셔틀버스</h2>
+        <p class="text-slate-500 text-sm mt-2">학원 등록 수강생이라면 누구나 전 노선 무료 탑승 가능합니다.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 노선 1 -->
+        <div class="border border-slate-200 rounded-2xl p-5 bg-slate-50 hover:border-teal-500 transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold bg-teal-600 text-white px-2.5 py-1 rounded-md">1호차</span>
+            <span class="text-xs text-slate-500 font-medium">산곡·청천 방면</span>
+          </div>
+          <h4 class="font-bold text-slate-800 text-base mb-2">산곡역 & 청천동 아파트단지</h4>
+          <p class="text-xs text-slate-600 mb-3">산곡역 3번출구 ↔ 청천 푸르지오 ↔ 영아다방사거리 ↔ 마장사거리 ↔ 학원</p>
+          <div class="text-[11px] text-teal-700 bg-teal-50/80 p-2 rounded-lg font-medium">
+            <i class="fa-regular fa-clock mr-1"></i> 매시간 10분~15분 간격 운행
+          </div>
+        </div>
+
+        <!-- 노선 2 -->
+        <div class="border border-slate-200 rounded-2xl p-5 bg-slate-50 hover:border-teal-500 transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold bg-blue-600 text-white px-2.5 py-1 rounded-md">2호차</span>
+            <span class="text-xs text-slate-500 font-medium">부평역·백운 방면</span>
+          </div>
+          <h4 class="font-bold text-slate-800 text-base mb-2">부평역 & 백운역 & 부평시장</h4>
+          <p class="text-xs text-slate-600 mb-3">부평역 북광장 ↔ 부평시장역 ↔ 백운역 2번출구 ↔ 현대아파트 ↔ 학원</p>
+          <div class="text-[11px] text-blue-700 bg-blue-50/80 p-2 rounded-lg font-medium">
+            <i class="fa-regular fa-clock mr-1"></i> 매시간 20분~25분 간격 운행
+          </div>
+        </div>
+
+        <!-- 노선 3 -->
+        <div class="border border-slate-200 rounded-2xl p-5 bg-slate-50 hover:border-teal-500 transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold bg-emerald-600 text-white px-2.5 py-1 rounded-md">3호차</span>
+            <span class="text-xs text-slate-500 font-medium">삼산·갈산 방면</span>
+          </div>
+          <h4 class="font-bold text-slate-800 text-base mb-2">삼산타운 & 갈산역 & 굴포천</h4>
+          <p class="text-xs text-slate-600 mb-3">갈산역 1번출구 ↔ 삼산체육관역 ↔ 굴포천역 ↔ 삼산주공단지 ↔ 학원</p>
+          <div class="text-[11px] text-emerald-700 bg-emerald-50/80 p-2 rounded-lg font-medium">
+            <i class="fa-regular fa-clock mr-1"></i> 매시간 30분~35분 간격 운행
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 p-4 bg-teal-50/70 border border-teal-200/80 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-800">셔틀버스 기사님 직통 문의 & 탑승 예약</div>
+            <div class="text-xs text-slate-500">집 앞 정류소 위치가 헷갈리실 경우 학원으로 전화주시면 친절히 안내드립니다.</div>
+          </div>
+        </div>
+        <a href="tel:032-500-0000" class="px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold rounded-lg shrink-0 transition-colors">
+          셔틀 문의 032-500-0000
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 수강생 생생 합격 후기 -->
+  <section id="review" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-teal-600 font-bold text-xs uppercase tracking-wider bg-teal-100/60 px-3 py-1 rounded-full">Reviews</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">수강생 리얼 합격 후기</h2>
+        <p class="text-slate-500 text-sm mt-2">산곡운전면허학원에서 원패스로 합격한 실제 수강생들의 이야기입니다.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 후기 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-slate-400 text-xs ml-1">(5.0)</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              "겁이 워낙 많아서 면허 딸 생각도 못하다가 친구 추천으로 등록했어요. 강사님이 긴장하지 않게 꿀팁도 많이 알려주시고 기능/도로 둘 다 한 번에 합격했습니다! 산곡동 사시는 분들 무조건 강추입니다."
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="font-bold text-slate-800">김*린 님 (2종보통 원패스)</span>
+            <span class="text-slate-400">2026.08</span>
+          </div>
+        </div>
+
+        <!-- 후기 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-slate-400 text-xs ml-1">(5.0)</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              "직장인이라 주말반으로 다녔는데 스케줄 배려를 정말 잘해주셨어요. 셔틀버스도 집 바로 앞까지 와서 퇴근 후나 주말에 다니기 정말 편했습니다. 자체 시험이라 떨리지 않아서 좋았어요."
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="font-bold text-slate-800">박*우 님 (1종보통 주말반)</span>
+            <span class="text-slate-400">2026.08</span>
+          </div>
+        </div>
+
+        <!-- 후기 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-slate-400 text-xs ml-1">(5.0)</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              "10년 동안 면허증만 지갑에 있던 장롱면허였는데 도로연수 10시간 받고 지금은 혼자 인천 송도까지 운전해서 다닙니다. 특히 주차 공식 가르쳐주신 덕분에 주차의 신이 됐네요 ㅎㅎ"
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="font-bold text-slate-800">이*정 님 (시내 도로연수)</span>
+            <span class="text-slate-400">2026.07</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 수강신청 & 상담 폼 섹션 -->
+  <section id="consultation" class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-gradient-to-tr from-slate-900 via-teal-950 to-slate-900 rounded-3xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden">
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <span class="text-teal-300 font-bold text-xs bg-teal-500/20 border border-teal-400/30 px-3 py-1 rounded-full">Online Registration</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mt-3">상담 신청 & 시간표 예약</h2>
+          <p class="text-slate-300 text-xs sm:text-sm mt-2">
+            원하시는 교육 일정 및 문의사항을 남겨주시면 친절하게 안내해 드립니다.
+          </p>
+        </div>
+
+        <form onsubmit="handleMainSubmit(event)" class="space-y-4 max-w-2xl mx-auto">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">성함 *</label>
+              <input type="text" id="mainName" required placeholder="홍길동" class="w-full text-sm px-4 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-400">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">연락처 *</label>
+              <input type="tel" id="mainPhone" required placeholder="010-0000-0000" class="w-full text-sm px-4 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-400">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">신청 과정 *</label>
+              <select id="mainCourse" class="w-full text-sm px-4 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400">
+                <option value="2종 보통 (자동)">2종 보통 자동</option>
+                <option value="1종 보통 (수동)">1종 보통 수동</option>
+                <option value="초보/장롱면허 도로연수">초보/장롱면허 도로연수</option>
+                <option value="1종 대형 / 2종 소형">1종 대형 / 2종 소형</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">희망 시작 시기</label>
+              <select id="mainSchedule" class="w-full text-sm px-4 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400">
+                <option value="가능한 바로 시작">가능한 바로 시작 (당일/익일)</option>
+                <option value="이번 주 내 시작">이번 주 내 시작</option>
+                <option value="다음 주 이후">다음 주 이후</option>
+                <option value="주말반 전용 희망">주말반(토/일) 전용 희망</option>
+                <option value="야간반 희망">야간반 희망</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">추가 문의사항 (셔틀 탑승위치, 거주지 등)</label>
+            <textarea id="mainMemo" rows="3" placeholder="예: 산곡역 근처 거주 중인데 셔틀 탈 수 있나요? 주말 위주 수업 가능한지 궁금합니다." class="w-full text-sm px-4 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-400"></textarea>
+          </div>
+
+          <div class="flex items-center gap-2 pt-1">
+            <input type="checkbox" id="mainAgree" required checked class="w-4 h-4 text-teal-500 rounded border-slate-600 focus:ring-teal-400">
+            <label for="mainAgree" class="text-xs text-slate-400">개인정보 수집 및 상담 전화/문자 안내에 동의합니다.</label>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-slate-950 font-black text-sm rounded-xl shadow-lg transition-all transform active:scale-98">
+            무료 상담 신청 완료하기
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 오시는 길 & 지도 섹션 -->
+  <section id="location" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-6 space-y-5">
+          <div>
+            <span class="text-teal-600 font-bold text-xs uppercase tracking-wider bg-teal-100/60 px-3 py-1 rounded-full">Location</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">찾아오시는 길 & 학원 안내</h2>
+            <p class="text-slate-500 text-sm mt-2">대중교통 및 무료 셔틀버스로 편리하게 방문하실 수 있습니다.</p>
+          </div>
+
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200">
+              <i class="fa-solid fa-location-dot text-teal-600 text-base mt-0.5"></i>
+              <div>
+                <div class="font-bold text-slate-800">학원 위치</div>
+                <div class="text-slate-600">인천광역시 부평구 마장로 (산곡동 인근)</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200">
+              <i class="fa-solid fa-train-subway text-teal-600 text-base mt-0.5"></i>
+              <div>
+                <div class="font-bold text-slate-800">지하철 이용 시</div>
+                <div class="text-slate-600">7호선 산곡역 3번 출구 (셔틀버스 수시 운행 5분 소요)</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200">
+              <i class="fa-solid fa-clock text-teal-600 text-base mt-0.5"></i>
+              <div>
+                <div class="font-bold text-slate-800">운영 및 상담 시간</div>
+                <div class="text-slate-600">평일 07:00 ~ 21:00 / 주말·공휴일 08:00 ~ 18:00 (연중무휴)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-3 pt-2">
+            <a href="tel:032-500-0000" class="flex-1 py-3 bg-teal-600 text-white rounded-xl text-center text-xs font-bold flex items-center justify-center gap-2 hover:bg-teal-700">
+              <i class="fa-solid fa-phone"></i> 032-500-0000 전화걸기
+            </a>
+            <button onclick="copyAddress('인천광역시 부평구 마장로 산곡 자동차운전전문학원')" class="px-4 py-3 bg-slate-200 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-300">
+              주소 복사
+            </button>
+          </div>
+        </div>
+
+        <div class="md:col-span-6">
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-md">
+            <!-- 시각적 지도 플레이스홀더 / 안내 UI -->
+            <div class="relative bg-slate-100 h-72 flex flex-col items-center justify-center p-6 text-center">
+              <div class="w-14 h-14 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-2xl mb-3 shadow-inner">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="font-extrabold text-slate-800 text-base">산곡 자동차운전전문학원</div>
+              <div class="text-xs text-slate-500 mt-1 max-w-xs">인천 부평구 산곡동 7호선 산곡역 인근</div>
+              
+              <div class="mt-4 flex gap-2">
+                <a href="https://map.naver.com" target="_blank" class="px-3 py-1.5 bg-[#03C75A] text-white text-xs font-bold rounded-lg flex items-center gap-1.5 shadow-xs">
+                  <span>N</span> 네이버지도 길찾기
+                </a>
+                <a href="https://map.kakao.com" target="_blank" class="px-3 py-1.5 bg-[#FEE500] text-slate-900 text-xs font-bold rounded-lg flex items-center gap-1.5 shadow-xs">
+                  <span>K</span> 카카오맵 길찾기
+                </a>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 text-center text-xs text-slate-500">
+              ※ 자가용 방문 수강생을 위한 대형 무료 주차장 완비
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 하단 푸터 -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-10 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 space-y-4">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-800 pb-6">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-teal-600 flex items-center justify-center text-white">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <span class="text-white font-bold text-base">산곡 자동차운전전문학원</span>
+        </div>
+        <div class="flex gap-4 text-xs">
+          <a href="#" class="hover:text-white">이용약관</a>
+          <a href="#" class="hover:text-white font-semibold text-slate-300">개인정보처리방침</a>
+          <a href="#courses" class="hover:text-white">수강료 고시</a>
+        </div>
+      </div>
+
+      <div class="space-y-1 text-slate-500 leading-relaxed">
+        <p>상호명: 산곡 자동차운전전문학원 | 대표자: 산곡운전 | 사업자등록번호: 123-45-67890</p>
+        <p>인천광역시 부평구 산곡동 마장로 일원 | 대표전화: 032-500-0000 | 팩스: 032-500-0001</p>
+        <p>경찰청 지정 운전전문학원 제2026-인천-00호</p>
+      </div>
+
+      <div class="pt-4 text-slate-600 text-[11px]">
+        © 2026 Sangok Driving Academy. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- 모바일 하단 플로팅 고정 바 (모바일 전용 바텀 시트) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 shadow-lg flex items-center gap-2.5">
+    <a href="tel:032-500-0000" class="flex-1 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-xl flex items-center justify-center gap-2 border border-slate-300">
+      <i class="fa-solid fa-phone text-teal-600"></i> 전화상담
+    </a>
+    <a href="#consultation" class="flex-[1.4] py-3 bg-gradient-to-r from-teal-600 to-emerald-600 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-2 shadow-md">
+      <i class="fa-solid fa-pen-to-square"></i> 실시간 수강신청
+    </a>
+  </div>
+
+  <!-- 스크립트 로직 -->
+  <script>
+    // 과정 탭 전환
+    function switchTab(tabId) {
+      document.querySelectorAll('.course-content-panel').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.course-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-teal-600', 'text-white', 'shadow-md');
+        btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      });
+
+      const activeBtnId = tabId.replace('tab-', 'btn-');
+      const activeBtn = document.getElementById(activeBtnId);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+        activeBtn.classList.add('bg-teal-600', 'text-white', 'shadow-md');
+      }
+    }
+
+    // 견적 계산기 로직
+    const courseRates = {
+      '2auto': { name: '2종 보통 (자동)', tuition: 750000 },
+      '1manual': { name: '1종 보통 (수동)', tuition: 780000 },
+      'road10': { name: '시내 도로연수 (10시간)', tuition: 350000 },
+      'heavy': { name: '1종 대형 면허', tuition: 650000 }
+    };
+
+    function calcTotal() {
+      const selectedCourse = document.querySelector('input[name="calcCourse"]:checked').value;
+      const courseInfo = courseRates[selectedCourse];
+
+      const hasInsurance = document.getElementById('calcInsurance').checked;
+      const hasExamFee = document.getElementById('calcExamFee').checked;
+      const hasDiscount = document.getElementById('calcStudentDiscount').checked;
+
+      let insuranceFee = hasInsurance ? 15000 : 0;
+      let examFee = (hasExamFee && selectedCourse !== 'road10') ? 95000 : 0;
+      let discountFee = hasDiscount ? -30000 : 0;
+
+      let tuition = courseInfo.tuition;
+      let extra = insuranceFee + examFee;
+      let total = tuition + extra + discountFee;
+
+      document.getElementById('summaryCourseName').innerText = courseInfo.name;
+      document.getElementById('summaryTuition').innerText = tuition.toLocaleString() + '원';
+      document.getElementById('summaryExtra').innerText = extra.toLocaleString() + '원';
+      document.getElementById('summaryDiscount').innerText = discountFee === 0 ? '0원' : discountFee.toLocaleString() + '원';
+      document.getElementById('totalPrice').innerText = total.toLocaleString();
+    }
+
+    function handleQuickSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('heroName').value;
+      const phone = document.getElementById('heroPhone').value;
+      const course = document.getElementById('heroCourse').value;
+
+      alert(`[상담 신청 완료]\n${name}님 (${phone})\n희망과정: ${course}\n\n신청이 정상 접수되었습니다. 담당 강사가 곧 연락드리겠습니다!`);
+      e.target.reset();
+    }
+
+    function handleMainSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('mainName').value;
+      const phone = document.getElementById('mainPhone').value;
+      const course = document.getElementById('mainCourse').value;
+      const schedule = document.getElementById('mainSchedule').value;
+
+      alert(`[수강/시간표 예약 접수]\n성함: ${name}\n연락처: ${phone}\n과정: ${course}\n희망시기: ${schedule}\n\n정상적으로 접수되었습니다. 안내 문자가 발송됩니다.`);
+      e.target.reset();
+    }
+
+    function copyAddress(addr) {
+      navigator.clipboard.writeText(addr).then(() => {
+        alert('학원 주소가 클립보드에 복사되었습니다!\n(' + addr + ')');
+      }).catch(() => {
+        alert('주소: ' + addr);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      calcTotal();
+    });
+  </script>
+</body>
+</html>
